@@ -1,10 +1,20 @@
 import React from 'react'
+import MainSlider from '../HomeComponents/MainSlider'
+import AboutSection from '../HomeComponents/AboutSection'
+import SegmentSection from '../HomeComponents/SegmentSection'
+import ProductSection from '../HomeComponents/ProductSection'
+import NumberStrip from '../HomeComponents/NumberStrip'
+import ContactSection from '../HomeComponents/ContactSection'
 
 function Home() {
     return (
         <>
-        <h1>Hello NPIA</h1>
-        <div className='' style={{height:'900px'}}></div>
+        <MainSlider />
+        <AboutSection />
+        <SegmentSection />
+        <ProductSection />
+        <NumberStrip />
+        <ContactSection />
         </>
     )
 }
