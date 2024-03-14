@@ -1,6 +1,6 @@
 import React, { useState, useEffect  } from 'react'
 import { Link } from 'react-router-dom'
-// import Logo from 'imgPath/logo.png'
+import Logo from 'imgPath/npia Logo.jpg'
 
 
 const Navbar = () => {
@@ -63,10 +63,10 @@ useEffect(() => {
   return (
     <>
     <header className='header_area'>
-    <div className='container-fluid header-top p-2' style={{backgroundColor:'#aaa'}}>
+    <div className='container-fluid header-top p-2' style={{backgroundColor:'rgb(13 29 108)',color:'#ccc'}}>
         <div className='container'>
             <div className='row'>
-                <div className='col-md-3'>+91 9484037539</div>
+                <div className='col-md-3'>+91-8178126122</div>
             </div>
         </div>
     </div>
@@ -75,7 +75,7 @@ useEffect(() => {
 
       <Link to="/" className="logo d-flex align-items-center">
         
-        <img src="" alt="tecroost" />
+        <img src={Logo} alt="NPIA" />
       </Link>
       <div className="" style={{zIndex:'9999'}} onClick={() => handleNav()}>
       <i className={ clicked ? "mobile-nav-toggle mobile-nav-show bi bi-x" : "mobile-nav-toggle mobile-nav-show bi bi-list"}></i>
@@ -84,9 +84,9 @@ useEffect(() => {
         <ul>
           <li onClick={() => handleNav()}><Link to="/" className="active">HOME</Link></li>
           <li><Link to="/about">ABOUT</Link></li>
-          <li><Link to="/services">SERVICES</Link></li>
-          <li><Link to="/portfolio">PORTFOLIO</Link></li>
-          <li className="dropdown" onClick={() => toggleMainDropdown()}><Link to="" id="down" className={dropdown1Visible ? 'active' : 'deactive'}><span>SERVICES</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
+          <li><Link to="/products">PRODUCTS</Link></li>
+          <li><Link to="/resources">RESOURCES</Link></li>
+          <li className="dropdown" onClick={() => toggleMainDropdown()}><Link to="" id="down" className={dropdown1Visible ? 'active' : 'deactive'}><span>FACTORY</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
             <ul id="inner-down" className={dropdown1Visible ? 'dropdown-active' : 'dropdown-deactive'}>
               
               
