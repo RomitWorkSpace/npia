@@ -1,0 +1,46 @@
+.text-justify{
+    text-align:justify;
+}
+
+.heading-line{
+    width: 140px;
+    height:3px;
+    background-color: rgb(13 29 108);
+    margin:auto;
+}
+
+.w-100{
+    width:100%;
+}
+
+.clr{
+    color:#0000fe;
+    font-weight:700;
+}
+.clr-white{
+    color:#eee;
+}
+
+
+.left-img, .right-img{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.strip-bg{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact-bg{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact-wrapper{
+    background-color:#eee;
+    border-radius:6px;
+}
