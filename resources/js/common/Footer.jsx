@@ -13,7 +13,7 @@ function Footer() {
           <a href="index.html" className="logo d-flex align-items-center">
             <img src={Logo} alt="tecroost" height="180" />
           </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+          <p>We eagerly await the opportunity to collaborate with clients, leveraging our expertise and advanced capabilities to meet their unique manufacturing requirements.</p>
           <div className="social-links d-flex mt-4">
             <a href="#" className="twitter"><i className="bi bi-twitter"></i></a>
             <a href="#" className="facebook"><i className="bi bi-facebook"></i></a>
@@ -27,31 +27,31 @@ function Footer() {
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="#">Our Resources</a></li>
             <li><a href="#">Terms of service</a></li>
             <li><a href="#">Privacy policy</a></li>
           </ul>
         </div>
 
         <div className="col-lg-2 col-6 footer-links">
-          <h4 className="clr-white">Our Services</h4>
+          <h4 className="clr-white">Our Products</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#">Plastic Parts</a></li>
+            <li><a href="#">Magnesium Parts</a></li>
+            <li><a href="#">Metal Body</a></li>
+            <li><a href="#">Camera Cases</a></li>
+            <li><a href="#">Smartwatch Cases</a></li>
           </ul>
         </div>
 
         <div className="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4 className="clr-white">Contact Us</h4>
           <p>
-            A108 Adam Street <br/>
-            New York, NY 535022<br/>
-            United States <br/><br/>
-            <strong>Phone:</strong> +1 5589 55488 55<br/>
-            <strong>Email:</strong> info@example.com<br/>
+          Plot No. 6, Sector 21,
+Greater Noida, Gautam Budh Nagar,
+UP - 201308 <br/><br/>
+            <strong>Phone:</strong> +91-8178126122<br/>
+            <strong>Email:</strong> admin@npia.in<br/>
           </p>
 
         </div>
