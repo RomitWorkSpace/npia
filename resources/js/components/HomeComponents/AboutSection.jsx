@@ -14,8 +14,19 @@ function AboutSection() {
                         <img src={ AboutImg } width="100%" alt="NPIA" />
                     </div>
                     <div className='col-md-6 text-justify'>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <p>Founded in 2020, our company, NPIA INDIA PVT LTD., embarked on a journey
+to revolutionize the Automotive & Mobile industry. With the completion of our
+state-of-the-art factory setup in May 2023 at Grater Noida, UP, we specialize in
+delivering CNC machining solutions for Automotive & Mobile Parts. Our
+unwavering dedication to client satisfaction drives us to provide exceptional
+quality, precision, and reliability. Through rigorous quality control measures, we
+ensure that every product that leaves our facility adheres to the highest industry
+standards.</p> <p>Our meticulous attention to detail, advanced testing protocols, and
+skilled technicians guarantee that our clients receive flawless components that
+meet their exact specifications. We eagerly await the opportunity to collaborate with
+clients, leveraging our expertise and advanced capabilities to meet their unique
+manufacturing requirements. We invite you to approach us and discover the
+seamless partnership we can create to drive success together.</p>
                     </div>
                 </div>
             </div>
