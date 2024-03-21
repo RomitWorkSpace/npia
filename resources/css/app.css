@@ -28,10 +28,14 @@
     background-repeat: no-repeat;
 }
 
-.strip-bg{
+.strip-bg, .mission-bg{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.mission-bg{
+    background-position: right;
 }
 
 .contact-bg{
@@ -43,4 +47,11 @@
 .contact-wrapper{
     background-color:#eee;
     border-radius:6px;
+}
+.box-shadow{
+    box-shadow:0px 1px 8px #aaa;
+}
+.mission-wrapper{
+    background-color:#fff;
+    border-radius:5px;
 }
