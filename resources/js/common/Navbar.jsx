@@ -66,7 +66,7 @@ useEffect(() => {
     <div className='container-fluid header-top p-2' style={{backgroundColor:'rgb(13 29 108)',color:'#ccc'}}>
         <div className='container'>
             <div className='row'>
-                <div className='col-md-3'>+91-8178126122</div>
+                <div className='col-md-3'>+91-8178126122 | admin@npia.in</div>
             </div>
         </div>
     </div>
@@ -83,7 +83,7 @@ useEffect(() => {
       <nav id="navbar" className="navbar">
         <ul>
           <li onClick={() => handleNav()}><Link to="/" className="active">HOME</Link></li>
-          <li><Link to="/about">ABOUT</Link></li>
+          <li onClick={() => handleNav()}><Link to="/about">ABOUT</Link></li>
           <li><Link to="/products">PRODUCTS</Link></li>
           <li><Link to="/resources">RESOURCES</Link></li>
           <li className="dropdown" onClick={() => toggleMainDropdown()}><Link to="" id="down" className={dropdown1Visible ? 'active' : 'deactive'}><span>FACTORY</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
