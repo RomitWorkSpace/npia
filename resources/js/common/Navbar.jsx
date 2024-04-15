@@ -4,26 +4,31 @@ import Logo from 'imgPath/npia Logo.jpg'
 
 
 const Navbar = () => {
-//   const [dropdownData, setDropdownData] = useState([]);
+  const [dropdownData, setDropdownData] = useState([]);
+  const [serviceData, setServiceData] = useState([]);
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [clicked, setClicked] = useState(false);
   const [dropdown1Visible, setDropdown1Visible] = useState(false);
+  const [dropdown2Visible, setDropdown2Visible] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-//   useEffect(() => {
+  useEffect(() => {
 
-//     const fetchData = async () => {
-//       try {
-//         const response = await fetch('https://tecroost.com/api/services');
-//         const data = await response.json();
-//         setDropdownData(data.services);
-//       } catch (error) {
-//         console.error('Error fetching dropdown data:', error);
-//       }
-//     };
+    const fetchData = async () => {
+      try {
+        const response = await fetch('https://filmcitynow.com/api/industries');
+        const data = await response.json();
+        setDropdownData(data.industries);
+        const res = await fetch('https://filmcitynow.com/api/services');
+        const data1 = await res.json();
+        setServiceData(data1.services);
+      } catch (error) {
+        console.error('Error fetching dropdown data:', error);
+      }
+    };
 
-//     fetchData();
-//   }, []);
+    fetchData();
+  }, []);
 
 useEffect(() => {
     const handleScroll = () => {
@@ -45,9 +50,13 @@ useEffect(() => {
     setActiveDropdown(activeDropdown === index ? null : index);
   };
 
-  const toggleMainDropdown = () =>{
+  const toggleIndustryDropdown = () =>{
       setDropdown1Visible(!dropdown1Visible);
   }
+
+  const toggleServiceDropdown = () =>{
+    setDropdown2Visible(!dropdown2Visible);
+}
 
   const handleNav = () =>{
     if(!clicked){
@@ -66,7 +75,7 @@ useEffect(() => {
     <div className='container-fluid header-top p-2' style={{backgroundColor:'rgb(13 29 108)',color:'#ccc'}}>
         <div className='container'>
             <div className='row'>
-                <div className='col-md-3'>+91-8178126122 | admin@npia.in</div>
+                <div className='col-md-4'>+91-8178126122 | admin@npia.in</div>
             </div>
         </div>
     </div>
@@ -85,21 +94,25 @@ useEffect(() => {
           <li onClick={() => handleNav()}><Link to="/" className="active">HOME</Link></li>
           <li onClick={() => handleNav()}><Link to="/about">ABOUT</Link></li>
           <li><Link to="/products">PRODUCTS</Link></li>
-          <li><Link to="/resources">RESOURCES</Link></li>
-          <li className="dropdown" onClick={() => toggleMainDropdown()}><Link to="" id="down" className={dropdown1Visible ? 'active' : 'deactive'}><span>FACTORY</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
+          <li className="dropdown" onClick={() => toggleServiceDropdown()}><Link to="" id="down" className={dropdown2Visible ? 'active' : 'deactive'}><span>SERVICES</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
+            <ul id="inner-down" className={dropdown2Visible ? 'dropdown-active' : 'dropdown-deactive'}>
+                        {serviceData.map((service, index) => (
+                          <li onClick={() => handleNav()}><Link to={`https://filmcitynow.com/service/${service.slug}`}>{service.name}</Link></li>
+                          
+                        ))}
+            </ul>
+          </li>
+
+          <li className="dropdown" onClick={() => toggleIndustryDropdown()}><Link to="" id="down" className={dropdown1Visible ? 'active' : 'deactive'}><span>INDUSTRIES</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
             <ul id="inner-down" className={dropdown1Visible ? 'dropdown-active' : 'dropdown-deactive'}>
               
               
             
                     
-                        {/* {dropdownData.map((dropdown, index) => (
+                        {dropdownData.map((dropdown, index) => (
+                          <li onClick={() => handleNav()}><Link to={`https://filmcitynow.com/industry/${dropdown.slug}`}>{dropdown.name}</Link></li>
                           
-                            <li className="dropdown myList" onClick={(e) => toggleDropdown(e, index)}><Link to="#" className={activeDropdown === index? 'active' : 'hidden'}><span>{ dropdown.name }</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
-                                <ul className={activeDropdown === index? 'dropdown-active' : 'hidden'}>
-                                    <SubServiceMenu props = {dropdown.id} />
-                                </ul>
-                            </li>
-                        ))} */}
+                        ))}
                     
              
               
@@ -107,8 +120,8 @@ useEffect(() => {
           </li>
 
 
-          <li><Link to="/contact">CONTACT</Link></li>
-          <li><Link to="" className="get-a-quote" href="get-a-quote.html">Get a Quote</Link></li>
+          <li onClick={() => handleNav()}><Link to="/contact">CONTACT</Link></li>
+          <li onClick={() => handleNav()}><Link to="https://waykenrm.com/request-a-quote/" className="get-a-quote">Get a Quote</Link></li>
         </ul>
       </nav>
 
