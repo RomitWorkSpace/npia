@@ -13,8 +13,8 @@ function SegmentSection() {
         <>
         <div className='container-fluid' style={{backgroundColor:'#ddd'}}>
             <div className='row'>
-                <div className='col-2 left-img' style={{backgroundImage: `url(${LeftImg})`}}></div>
-                <div className='col-8 pt-5 mt-4 pb-5'>
+                <div className='col-md-2 left-img' style={{backgroundImage: `url(${LeftImg})`}}></div>
+                <div className='col-md-8 pt-5 mt-4 pb-5'>
                     <h3 className='clr bold text-center'>APPLICABLE INDUSTRIES</h3>
                     <hr className='heading-line' />
                     <div className='row mt-5'>
@@ -44,7 +44,7 @@ function SegmentSection() {
                         </div>
                     </div>
                 </div>
-                <div className='col-2 right-img' style={{backgroundImage: `url(${RightImg})`}}> </div>
+                <div className='col-md-2 right-img' style={{backgroundImage: `url(${RightImg})`}}> </div>
             </div>
         </div>
         </>
