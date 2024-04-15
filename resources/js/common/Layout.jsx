@@ -8,6 +8,8 @@ import Contact from '../components/pages/Contact'
 import OurProduct from '../components/pages/OurProduct';
 import ProductDetail from '../components/pages/ProductDetail';
 import IndustryPage from '../components/pages/IndustryPage';
+import ErrorPage from '../components/ErrorPage';
+import ServicePage from '../components/pages/ServicePage';
 
 
 function Layout() {
@@ -20,9 +22,9 @@ function Layout() {
         <Route path="/products" exact element={<OurProduct />} />
         <Route path="/product/:slug" exact element={<ProductDetail />} />
         <Route path="/industry/:slug" exact element={<IndustryPage />} />
-        {/* <Route path="/services"  element={<Service />} />
-        <Route path='/service/:slug' exact element={<SubService/>} /> */}
+        <Route path='/service/:slug' exact element={<ServicePage />} />
         <Route path="/contact"  element={<Contact />} /> 
+        <Route path="*"  element={<ErrorPage />} /> 
     </Routes>
     <Footer />
     </>
