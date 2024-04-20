@@ -93,7 +93,7 @@ useEffect(() => {
         <ul>
           <li onClick={() => handleNav()}><Link to="/" className="active">HOME</Link></li>
           <li onClick={() => handleNav()}><Link to="/about">ABOUT</Link></li>
-          <li><Link to="/products">PRODUCTS</Link></li>
+          <li onClick={() => handleNav()}><Link to="/products">PRODUCTS</Link></li>
           <li className="dropdown" onClick={() => toggleServiceDropdown()}><Link to="" id="down" className={dropdown2Visible ? 'active' : 'deactive'}><span>SERVICES</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
             <ul id="inner-down" className={dropdown2Visible ? 'dropdown-active' : 'dropdown-deactive'}>
                         {serviceData.map((service, index) => (
