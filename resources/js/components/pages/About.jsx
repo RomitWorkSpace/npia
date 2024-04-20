@@ -1,8 +1,9 @@
 import React from 'react'
 
-import AboutBanner from 'imgPath/About-Banner.jpg'
+import AboutBanner from 'imgPath/About-us.jpg'
 import AboutSection from '../HomeComponents/AboutSection'
 import MissionSection from '../AboutComponents/MissionSection'
+import OurTeam from '../AboutComponents/OurTeam'
 
 function About() {
     return (
@@ -12,6 +13,7 @@ function About() {
         </div>
         <AboutSection />
         <MissionSection />
+        <OurTeam />
         </>
     )
 }
