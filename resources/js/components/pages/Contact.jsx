@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ContactBanner from 'imgPath/Contact us Banner.jpg'
+import ContactBanner from 'imgPath/Contact-us.jpg'
 import FormSection from '../ContactComponents/FormSection'
 import ContactStrip from '../ContactComponents/ContactStrip'
 
