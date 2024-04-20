@@ -55,7 +55,7 @@ function RelatedProduct({props}) {
                 <SwiperSlide>
                     <div className='text-center'>
                     <img src={`https://filmcitynow.com/storage/app/${filteredProduct.image}`} width="100%" alt="product" />
-                    <Link to={`/product/${filteredProduct.name}`}>{filteredProduct.name}</Link>
+                    <Link to={`/product/${filteredProduct.slug}`}>{filteredProduct.name}</Link>
                     </div>
                 </SwiperSlide>
             ))}
