@@ -7,11 +7,10 @@ import 'swiper/css/autoplay';
 import 'swiper/css/effect-fade';
 import { Pagination, Autoplay, EffectFade } from 'swiper/modules';
 
-import topBanner1 from 'imgPath/slider/mbslider1.jpeg';
-import topBanner2 from 'imgPath/slider/mbslider2.jpeg';
-import topBanner3 from 'imgPath/slider/mbslider3.jpeg';
-import topBanner4 from 'imgPath/slider/mbslider4.jpeg';
-import topBanner5 from 'imgPath/slider/mbslider5.jpeg';
+import topBanner1 from 'imgPath/sliders/Mobile-Slider-1.jpg';
+import topBanner2 from 'imgPath/sliders/Mobile-Slider-2.jpg';
+import topBanner3 from 'imgPath/sliders/Mobile-Slider-3.jpg';
+import topBanner4 from 'imgPath/sliders/Mobile-Slider-4.jpg';
 
 
 export default function MobileSlider(){
@@ -36,7 +35,6 @@ export default function MobileSlider(){
                 <SwiperSlide><img src={topBanner2} width="100%"></img></SwiperSlide>
                 <SwiperSlide><img src={topBanner3} width="100%"></img></SwiperSlide>
                 <SwiperSlide><img src={topBanner4} width="100%"></img></SwiperSlide>
-                <SwiperSlide><img src={topBanner5} width="100%"></img></SwiperSlide>
             </Swiper>
             </div>
         </>
