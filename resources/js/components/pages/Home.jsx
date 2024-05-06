@@ -12,7 +12,6 @@ function Home() {
         <MainSlider />
         <AboutSection />
         <SegmentSection />
-        <ProductSection />
         <NumberStrip />
         <ContactSection />
         </>
