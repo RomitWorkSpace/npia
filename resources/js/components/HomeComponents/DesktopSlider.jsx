@@ -7,11 +7,10 @@ import 'swiper/css/autoplay';
 import 'swiper/css/effect-fade';
 import { Pagination, Autoplay, EffectFade } from 'swiper/modules';
 
-import SliderImg1 from 'imgPath/slider/dkslider1.jpeg';
-import SliderImg2 from 'imgPath/slider/dkslider2.jpeg';
-import SliderImg3 from 'imgPath/slider/dkslider3.jpeg';
-import SliderImg4 from 'imgPath/slider/dkslider4.jpeg';
-import SliderImg5 from 'imgPath/slider/dkslider5.jpeg';
+import SliderImg1 from 'imgPath/sliders/Slider-1.jpg';
+import SliderImg2 from 'imgPath/sliders/Slider-2.jpg';
+import SliderImg3 from 'imgPath/sliders/Slider-3.jpg';
+import SliderImg4 from 'imgPath/sliders/Slider-4.jpg';
 
 function DesktopSlider() {
     return (
@@ -35,7 +34,6 @@ function DesktopSlider() {
                 <SwiperSlide><img src={SliderImg2} width="100%"></img></SwiperSlide>
                 <SwiperSlide><img src={SliderImg3} width="100%"></img></SwiperSlide>
                 <SwiperSlide><img src={SliderImg4} width="100%"></img></SwiperSlide>
-                <SwiperSlide><img src={SliderImg5} width="100%"></img></SwiperSlide>
             </Swiper>
             </div>
         </>
