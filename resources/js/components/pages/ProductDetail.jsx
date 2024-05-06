@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ProductBanner from 'imgPath/Product-Banner.jpg'
+import ProductBanner from 'imgPath/Our-Product.jpg'
 import DetailSection from '../ProductComponents/DetailSection'
 
 function ProductDetail() {
