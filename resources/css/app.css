@@ -20,7 +20,32 @@
 .clr-white{
     color:#eee;
 }
+.clr-red{
+    color: red;
+}
 
+.email-icon i{
+    font-size: 32px;
+    color: #0000fe;
+    margin-top:13px;
+}
+
+.email-icon{
+    position: relative;
+    padding-left:30px;
+}
+
+.icon-bg{
+    width: 60px;
+    height: 60px;
+    background-color: #dbdbf7;
+    border-radius: 50%;
+    text-align: center;
+}
+.icon-info{
+    width: calc(100% - 60px);
+    padding-left:20px;
+}
 
 .left-img, .right-img{
     background-position: center;
