@@ -16,10 +16,10 @@ const Navbar = () => {
 
     const fetchData = async () => {
       try {
-        const response = await fetch('https://filmcitynow.com/api/industries');
+        const response = await fetch('/api/industries');
         const data = await response.json();
         setDropdownData(data.industries);
-        const res = await fetch('https://filmcitynow.com/api/services');
+        const res = await fetch('/api/services');
         const data1 = await res.json();
         setServiceData(data1.services);
       } catch (error) {
@@ -75,7 +75,7 @@ useEffect(() => {
     <div className='container-fluid header-top p-2' style={{backgroundColor:'rgb(13 29 108)',color:'#ccc'}}>
         <div className='container'>
             <div className='row'>
-                <div className='col-md-4'>+91-8178126122 | admin@npia.in</div>
+                <div className='col-md-4'><i className='fa fa-phone'></i><Link to="tel:+91-8178126122"  style={{color:'#eee'}}> +91-8178126122</Link> | <i className='fa fa-envelope'></i><Link to="mailto:admin@npia.in"  style={{color:'#eee'}}> admin@npia.in</Link></div>
             </div>
         </div>
     </div>
@@ -93,7 +93,6 @@ useEffect(() => {
         <ul>
           <li onClick={() => handleNav()}><Link to="/" className="active">HOME</Link></li>
           <li onClick={() => handleNav()}><Link to="/about">ABOUT</Link></li>
-          <li onClick={() => handleNav()}><Link to="/products">PRODUCTS</Link></li>
           <li className="dropdown" onClick={() => toggleServiceDropdown()}><Link to="" id="down" className={dropdown2Visible ? 'active' : 'deactive'}><span>SERVICES</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
             <ul id="inner-down" className={dropdown2Visible ? 'dropdown-active' : 'dropdown-deactive'}>
                         {serviceData.map((service, index) => (
@@ -121,7 +120,7 @@ useEffect(() => {
 
 
           <li onClick={() => handleNav()}><Link to="/contact">CONTACT</Link></li>
-          <li onClick={() => handleNav()}><Link to="https://waykenrm.com/request-a-quote/" className="get-a-quote">Get a Quote</Link></li>
+          <li onClick={() => handleNav()}><Link to="/request-a-quote" className="get-a-quote">Get a Quote</Link></li>
         </ul>
       </nav>
 
