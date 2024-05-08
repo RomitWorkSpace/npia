@@ -10,6 +10,7 @@ import ProductDetail from '../components/pages/ProductDetail';
 import IndustryPage from '../components/pages/IndustryPage';
 import ErrorPage from '../components/ErrorPage';
 import ServicePage from '../components/pages/ServicePage';
+import RequestQuote from '../components/pages/RequestQuote';
 
 
 function Layout() {
@@ -24,6 +25,7 @@ function Layout() {
         <Route path="/industry/:slug" exact element={<IndustryPage />} />
         <Route path='/service/:slug' exact element={<ServicePage />} />
         <Route path="/contact"  element={<Contact />} /> 
+        <Route path="/request-a-quote"  element={<RequestQuote />} /> 
         <Route path="*"  element={<ErrorPage />} /> 
     </Routes>
     <Footer />
